@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+body {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.navbar {
+    height: 15vh;
+    background-color: rgb(22, 35, 81);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+.projname {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.button1 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+    width: 100%;
+    padding-top: 3vh;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profname {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    text-align: center;
+    /* Center-align text */
+    max-width: 60%;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Space below the username */
+}
+
+.viewname {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    /* Space below the viewname */
+}
+
+.bio {
+    max-width: 50%;
+    /* Full width of the container */
+    font-size: 16px;
+    /* Adjust font size */
+    line-height: 1.5;
+    /* Improve readability */
+    margin-top: 10px;
+    /* Space above the bio */
+    padding: 0 10px;
+    /* Add horizontal padding */
+    box-sizing: border-box;
+    /* Include padding in the element’s width */
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.count {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #777;
+}
+
+.posts {
+    margin: 2% auto;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.post {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.post-image {
+    margin: 0;
+}
+
+.post-image img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.post-overlay {
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.post:hover .post-overlay {
+    display: flex;
+}
+
+.post-like,
+.post-comments {
+    width: 80px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(22, 35, 81);
+    color: white;
+    text-align: center;
+    /* padding: 20px 0; */
+    /* font-size: 5px; */
+    box-sizing: border-box;
+}
+
+#fmail {
+    font-size: 10px;
+    color: white;
+    padding: 10px 0;
+}
+
+#fmail a {
+    color: red;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 10px;
+    margin: 0px;
+}

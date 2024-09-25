@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+body {
+    flex: 1;
+}
+
+.navbar {
+    height: 15vh;
+    background-color: #755139FF;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    justify-content: left;
+}
+
+.fontname {
+    height: 70px;
+    width: 150px;
+}
+
+.projname {
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    color: #F2EDD7FF;
+}
+
+.button1 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.nav-buttons {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2EDD7FF;
+    background-color: #6D4F28;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    color: #F2EDD7FF;
+    background-color: #6D4F28;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #F2EDD7FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #6D4F28;
+}
+
+.nav-buttons:hover .dropdown-content {
+    display: block;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+    width: 100%;
+    padding-top: 3vh;
+    /* Adjust based on the navbar height */
+    flex: 1;
+    overflow-y: auto;
+}
+
+.card {
+    width: 90%;
+    /* max-height: 400; */
+    max-width: 600px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+}
+
+.card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .top .userDeatils {
+    display: flex;
+    align-items: center;
+}
+
+.card .top .userDeatils .profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.card .top .userDeatils h3 {
+    font-size: 18px;
+    color: #4d4d4f;
+    font-weight: 700;
+}
+
+.card .top .userDeatils span {
+    font-size: 0.75em;
+}
+
+.card .top .dot {
+    transform: scale(0.6);
+    cursor: pointer;
+}
+
+.imgBg {
+    width: 100%;
+    height: 320px;
+    margin: 10px 0 15px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns img {
+    max-width: 24px;
+    cursor: pointer;
+}
+
+.btns .left img {
+    margin-right: 8px;
+}
+
+.likes {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #4d4d4f;
+}
+
+.message {
+    font-weight: 400;
+    margin-top: 5px;
+    color: #777;
+    line-height: 1.5em;
+}
+
+.message b {
+    color: #262626;
+}
+
+.message span {
+    color: #1d92ff;
+    cursor: pointer;
+}
+
+
+/* Existing styles here */
+
+.card .message {
+    max-height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    position: relative;
+    transition: max-height 0.3s ease;
+    padding: 10px;
+    /* Add padding for better alignment */
+    text-align: justify;
+    /* Justify the text for proper alignment */
+    width: 100%;
+    /* Ensure the message takes the full width of the container */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.card .message.expanded {
+    max-height: none;
+    /* Remove the height limit when expanded */
+}
+
+.card .show-more {
+    color: #1d92ff;
+    cursor: pointer;
+    display: block;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.comments {
+    margin-top: 10px;
+    color: #999;
+}
+
+.addComments {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.addComments .userImg {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.addComments .text {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262626;
+}
+
+.addComments .text::placeholder {
+    color: #777;
+}
+
+.postTime {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #777;
+}
+
+footer {
+    height: 5%;
+    width: 100%;
+    background-color: #755139;
+    font-size: 1.0em;
+    color: #F2EDD7FF;
+    margin: 0;
+    padding: auto;
+}
+
+.fcontainer {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    /* font-size: 20px; */
+    margin: 0 auto;
+    text-align: center;
+    padding: auto;
+}

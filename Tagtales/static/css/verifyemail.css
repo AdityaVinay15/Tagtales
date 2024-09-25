@@ -1,0 +1,162 @@
+/* Reset and Box-Sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Full Height Container */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+
+/* Body Flexbox for Centering Content */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15vh;
+    /* Adjust based on the navbar height */
+}
+
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(22, 35, 81);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+.projname {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.button1 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Form Container */
+
+.form-container {
+    width: 60%;
+    /* Adjust width for larger size */
+    max-width: 700px;
+    /* Optional: maximum width for larger screens */
+    padding: 30px;
+    /* Add decent padding */
+    background-color: #ffffff;
+    border: 5px solid #f1f1f1;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* Optional: shadow for better visual */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Form Styling */
+
+.con1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #0a0909;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8ebf42;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    /* Shorter width for the button */
+    border-radius: 4px;
+    margin: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

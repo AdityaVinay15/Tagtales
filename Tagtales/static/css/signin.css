@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Full Height Container */
+
+
+/* Body Flexbox for Centering Content */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    height: 15vh;
+    background-color: rgb(255, 107, 1);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 70px;
+    width: 70px;
+    justify-content: left;
+}
+
+.fontname {
+    height: 70px;
+    width: 150px;
+    /* justify-content: center; */
+}
+
+.projname {
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    color: #F2EDD7FF;
+}
+
+.button1 {
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: black; */
+    color: white;
+}
+
+.tagline {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+
+/* Form Container */
+
+.form-container {
+    width: 60%;
+    /* Adjust width for larger size */
+    max-width: 700px;
+    /* Optional: maximum width for larger screens */
+    padding: 30px;
+    /* Add decent padding */
+    background-color: #ffffff;
+    border: 5px solid #f1f1f1;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Optional: shadow for better visual */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Form Styling */
+
+.con1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8ebf42;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    /* Shorter width for the button */
+    border-radius: 4px;
+    margin: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
